@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emir Palutu Mezarlık Pavyonu 💀🔥</title>
+    <title>Emir Palutu RGB Mezarı 💀🔥</title>
     <style>
         body {
             margin: 0;
@@ -31,37 +31,27 @@
             height: 100%;
             text-align: center;
             padding-top: 20vh;
-            animation: epilepsi 0.1s infinite alternate;
-        }
-
-        @keyframes epilepsi {
-            0% { background-color: red; color: yellow; }
-            20% { background-color: blue; color: cyan; }
-            40% { background-color: green; color: white; }
-            60% { background-color: purple; color: orange; }
-            80% { background-color: black; color: red; }
-            100% { background-color: pink; color: lime; }
-        }
-
-        .puantiye {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            background-color: white;
-            border-radius: 50%;
-            opacity: 0.5;
-            animation: puantiye-yanip-sonme 0.2s infinite alternate;
-        }
-
-        @keyframes puantiye-yanip-sonme {
-            0% { opacity: 0.2; }
-            100% { opacity: 1; }
-        }
-
-        .zorba-text {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
-            animation: epilepsi 0.1s infinite alternate;
+            animation: rgb-text 0.1s infinite alternate;
+        }
+
+        @keyframes rgb-text {
+            0% { color: red; }
+            20% { color: yellow; }
+            40% { color: lime; }
+            60% { color: cyan; }
+            80% { color: magenta; }
+            100% { color: white; }
+        }
+
+        @keyframes rgb-bg {
+            0% { background-color: red; }
+            20% { background-color: yellow; }
+            40% { background-color: lime; }
+            60% { background-color: cyan; }
+            80% { background-color: magenta; }
+            100% { background-color: black; }
         }
 
     </style>
@@ -95,28 +85,17 @@
     </div>
 
     <div id="main-content">
-        <h1 class="zorba-text">Emir Palutu'ya Zorbalık Pavyonu! 🔥💀</h1>
-        <h2 class="zorba-text">Burası onun sanal mezarı! 😂</h2>
-        <p class="zorba-text">Bu siteyi gören Emir: 💀💀💀</p>
+        <h1>EMİR PALUTU MEZAR PAVYONU 🔥💀</h1>
+        <h2>RGB MANYAĞI OLDUK 🚨🚀</h2>
+        <p>Bu siteyi gören Emir: 💀💀💀</p>
     </div>
 
     <script>
         setTimeout(() => {
             document.getElementById("ascii").style.display = "none";
             document.getElementById("main-content").style.display = "block";
-            puantiyeler();
+            document.body.style.animation = "rgb-bg 0.1s infinite alternate";
         }, 1500);
-
-        function puantiyeler() {
-            for (let i = 0; i < 150; i++) {
-                let dot = document.createElement("div");
-                dot.classList.add("puantiye");
-                dot.style.left = Math.random() * window.innerWidth + "px";
-                dot.style.top = Math.random() * window.innerHeight + "px";
-                dot.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
-                document.body.appendChild(dot);
-            }
-        }
     </script>
 
 </body>
