@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emir Palutu'yu Gömmek İçin Yapılmış Zorba Site 🔥💀</title>
+    <title>Emir Palutu'yu Zorbalama Pavyonu 🔥💀</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: monospace;
             text-align: center;
-            overflow: hidden;
             background: black;
             color: white;
+            overflow: hidden;
         }
 
-        .rgb-text {
-            font-size: 3rem;
-            font-weight: bold;
-            animation: rgb-color 1s infinite alternate;
+        #ascii {
+            font-size: 12px;
+            white-space: pre;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        @keyframes rgb-color {
-            0% { color: red; }
-            33% { color: lime; }
-            66% { color: blue; }
-            100% { color: red; }
+        #main-content {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: black;
+            text-align: center;
+            padding-top: 20vh;
+            animation: pavyon 0.5s infinite alternate;
+        }
+
+        @keyframes pavyon {
+            0% { background-color: red; color: yellow; }
+            25% { background-color: blue; color: cyan; }
+            50% { background-color: green; color: white; }
+            75% { background-color: purple; color: orange; }
+            100% { background-color: black; color: red; }
         }
 
         .puantiye {
@@ -36,35 +51,38 @@
             border-radius: 50%;
             opacity: 0.5;
         }
-
-        @keyframes hareket {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(20px); }
-            100% { transform: translateY(0); }
-        }
-
-        #zorbalama {
-            margin-top: 20vh;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .hakaret {
-            font-size: 1.5rem;
-            margin-top: 10px;
-            animation: hareket 1s infinite alternate;
-        }
     </style>
 </head>
 <body>
 
-    <div class="rgb-text">EMİR PALUTU'YA SANAL ZORBALIK PORTALI 💀🔥</div>
-    <div id="zorbalama">  
-        Emir Palutu = 💩  
-        <div class="hakaret">Beter olsunnn! 😂😂</div>
+    <div id="ascii">
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⢉⢉⠉⠉⠻⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⣿⣿⣿⠟⠠⡰⣕⣗⣷⣧⣀⣅⠘⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⣿⣿⠃⣠⣳⣟⣿⣿⣷⣿⡿⣜⠄⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⡿⠁⠄⣳⢷⣿⣿⣿⣿⡿⣝⠖⠄⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⠃⠄⢢⡹⣿⢷⣯⢿⢷⡫⣗⠍⢰⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⡏⢀⢄⠤⣁⠋⠿⣗⣟⡯⡏⢎⠁⢸⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⠄⢔⢕⣯⣿⣿⡲⡤⡄⡤⠄⡀⢠⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⠇⠠⡳⣯⣿⣿⣾⢵⣫⢎⢎⠆⢀⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⠄⢨⣫⣿⣿⡿⣿⣻⢎⡗⡕⡅⢸⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⠄⢜⢾⣾⣿⣿⣟⣗⢯⡪⡳⡀⢸⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⡄⢨⣻⣽⣿⣟⣿⣞⣗⡽⡸⡐⢸⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⡇⢀⢗⣿⣿⣿⣿⡿⣞⡵⡣⣊⢸⣿⣿⣿⣿⣿⣿⣿<br>
+    </div>
+
+    <div id="main-content">
+        <h1>Emir Palutu'ya Zorbalık Pavyonu! 🔥💀</h1>
+        <h2>Burası onun sanal mezarı! 😂</h2>
+        <p>Bu siteyi gören Emir: 💀💀💀</p>
     </div>
 
     <script>
+        setTimeout(() => {
+            document.getElementById("ascii").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+            puantiyeler();
+        }, 1000);
+
         function puantiyeler() {
             for (let i = 0; i < 100; i++) {
                 let dot = document.createElement("div");
@@ -75,7 +93,104 @@
                 document.body.appendChild(dot);
             }
         }
-        puantiyeler();
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emir Palutu'yu Zorbalama Pavyonu 🔥💀</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            text-align: center;
+            background: black;
+            color: white;
+            overflow: hidden;
+        }
+
+        #ascii {
+            font-size: 12px;
+            white-space: pre;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #main-content {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: black;
+            text-align: center;
+            padding-top: 20vh;
+            animation: pavyon 0.5s infinite alternate;
+        }
+
+        @keyframes pavyon {
+            0% { background-color: red; color: yellow; }
+            25% { background-color: blue; color: cyan; }
+            50% { background-color: green; color: white; }
+            75% { background-color: purple; color: orange; }
+            100% { background-color: black; color: red; }
+        }
+
+        .puantiye {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="ascii">
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⢉⢉⠉⠉⠻⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⣿⣿⣿⠟⠠⡰⣕⣗⣷⣧⣀⣅⠘⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⣿⣿⠃⣠⣳⣟⣿⣿⣷⣿⡿⣜⠄⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⡿⠁⠄⣳⢷⣿⣿⣿⣿⡿⣝⠖⠄⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⣿⠃⠄⢢⡹⣿⢷⣯⢿⢷⡫⣗⠍⢰⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⡏⢀⢄⠤⣁⠋⠿⣗⣟⡯⡏⢎⠁⢸⣿⣿⣿⣿⣿<br>
+        ⣿⣿⣿⠄⢔⢕⣯⣿⣿⡲⡤⡄⡤⠄⡀⢠⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⠇⠠⡳⣯⣿⣿⣾⢵⣫⢎⢎⠆⢀⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⠄⢨⣫⣿⣿⡿⣿⣻⢎⡗⡕⡅⢸⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⠄⢜⢾⣾⣿⣿⣟⣗⢯⡪⡳⡀⢸⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⡄⢨⣻⣽⣿⣟⣿⣞⣗⡽⡸⡐⢸⣿⣿⣿⣿⣿⣿⣿<br>
+        ⣿⣿⡇⢀⢗⣿⣿⣿⣿⡿⣞⡵⡣⣊⢸⣿⣿⣿⣿⣿⣿⣿<br>
+    </div>
+
+    <div id="main-content">
+        <h1>Emir Palutu'ya Zorbalık Pavyonu! 🔥💀</h1>
+        <h2>Burası onun sanal mezarı! 😂</h2>
+        <p>Bu siteyi gören Emir: 💀💀💀</p>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("ascii").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+            puantiyeler();
+        }, 1000);
+
+        function puantiyeler() {
+            for (let i = 0; i < 100; i++) {
+                let dot = document.createElement("div");
+                dot.classList.add("puantiye");
+                dot.style.left = Math.random() * window.innerWidth + "px";
+                dot.style.top = Math.random() * window.innerHeight + "px";
+                dot.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
+                document.body.appendChild(dot);
+            }
+        }
     </script>
 
 </body>
