@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emir Palutu'yu Gömmek İçin Yapılmış Zorba Site 🔥💀</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            background: black;
+            color: white;
+        }
+
+        .rgb-text {
+            font-size: 3rem;
+            font-weight: bold;
+            animation: rgb-color 1s infinite alternate;
+        }
+
+        @keyframes rgb-color {
+            0% { color: red; }
+            33% { color: lime; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+
+        .puantiye {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        @keyframes hareket {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(20px); }
+            100% { transform: translateY(0); }
+        }
+
+        #zorbalama {
+            margin-top: 20vh;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .hakaret {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            animation: hareket 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rgb-text">EMİR PALUTU'YA SANAL ZORBALIK PORTALI 💀🔥</div>
+    <div id="zorbalama">  
+        Emir Palutu = 💩  
+        <div class="hakaret">Beter olsunnn! 😂😂</div>
+    </div>
+
+    <script>
+        function puantiyeler() {
+            for (let i = 0; i < 100; i++) {
+                let dot = document.createElement("div");
+                dot.classList.add("puantiye");
+                dot.style.left = Math.random() * window.innerWidth + "px";
+                dot.style.top = Math.random() * window.innerHeight + "px";
+                dot.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
+                document.body.appendChild(dot);
+            }
+        }
+        puantiyeler();
+    </script>
+
+</body>
+</html>
